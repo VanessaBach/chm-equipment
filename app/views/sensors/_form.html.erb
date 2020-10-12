@@ -1,0 +1,24 @@
+<%= simple_form_for(sensor) do |f| %>
+  <div>
+    <%= f.input :name %>
+  </div>
+  <div>  
+    <%= f.input :serial_number %>
+  </div>
+  <div>
+    <%= f.input :model %>
+  </div>
+  <div>  
+    <%= f.input :brand %>
+  </div>
+  <div>  
+    <%= f.input :status %>
+  </div>
+  <div>  
+    <%= f.input :comment %>
+  </div>
+  <div>  
+    <%= f.input :image %>
+  </div> 
+  <%= f.submit class: "btn btn-primary mt-1"%>
+<% end %>

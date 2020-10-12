@@ -1,26 +1,5 @@
+<h1>Add a Sensor</h1>
+<%= render "form", sensor: @sensor %>
 
-<%= form_for(@task) do |f| %>
-  <div>
-    <%= f.label :title %>
-  </div>
-  <div>
-    <%= f.text_field :title %>
-  </div>
-  <div>  
-    <%= f.label :details %>
-  </div>
-  <div>
-    <%= f.text_field :details %>
-  </div>
-  <div>
-    <%= f.label :completed %>
-  </div>
-  <div>
-    <%= f.check_box :completed %>
-  </div>
-  
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>
-
-<%= link_to 'Back to list', tasks_path%>
+<%= link_to 'Back to list', sensors_path, class: "btn btn-primary mt-1"%>
 
