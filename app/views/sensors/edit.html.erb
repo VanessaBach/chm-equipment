@@ -1,0 +1,23 @@
+<%= form_for(@task) do |f| %>
+  <div>
+    <%= f.label :title %>
+  </div>
+  <div>
+    <%= f.text_field :title %>
+  </div>
+  <div>  
+    <%= f.label :details %>
+  </div>
+  <div>
+    <%= f.text_field :details %>
+  </div>
+  <div>
+    <%= f.label :completed %>
+  </div>
+  
+    <%= f.check_box :completed %>
+  
+  <%= f.submit class: "btn btn-primary"%>
+<% end %>
+
+
